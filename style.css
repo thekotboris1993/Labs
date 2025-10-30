@@ -489,4 +489,24 @@ sup {
     .container-3 {
         justify-content: center;
     }
+/* Анимации */
+.absolute-box:hover {
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.relative-cat-box:hover {
+    transform: translateX(20px);
+    transition: transform 0.3s ease;
+}
+
+.static-box:hover {
+    background: #2980b9;
+    transition: background 0.3s ease;
+}
+
+.sticky-box:hover {
+    background: #27ae60;
+    transition: background 0.3s ease;
+}
 }
