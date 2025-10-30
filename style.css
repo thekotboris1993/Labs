@@ -1,4 +1,4 @@
-/* Тело дока */
+/* Тело документа */
 body {
     font-family: Arial, sans-serif;
     max-width: 1200px;
@@ -8,14 +8,44 @@ body {
     color: #333;
     min-height: 100vh;
 }
-/* Основа */
+
+/* Шапка для лабораторной №3 */
+.header {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+}
+
+/* Основной контейнер */
 .content {
     display: flex;
     gap: 30px;
     margin: 20px 0;
     align-items: flex-start;
 }
-/* Левая часть о себе */
+
+/* Левая часть - информация о себе */
 .content-left {
     flex: 2;
     background: white;
@@ -24,7 +54,8 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     margin-right: 15px;
 }
-/* Правая часть - фото */
+
+/* Правая часть - фотография */
 .content-right {
     flex: 1;
     background: white;
@@ -33,7 +64,283 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     margin-left: 15px;
 }
-/* ЗаГоловки */
+
+/* Секции для page2.html */
+.section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Горизонтальное позиционирование */
+.container {
+    background: #ecf0f1;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Блок для первого котика */
+.block {
+    width: 200px;
+    height: 200px;
+    background: #e74c3c;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Центрированное изображение для второго котика */
+.centered-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Стили для котиков в горизонтальном позиционировании */
+.cat-block {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Вертикальное позиционирование */
+.container-2 {
+    background: #ecf0f1;
+    padding: 50px;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Центрированное изображение */
+.centered-image {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Стили для котиков в горизонтальном позиционировании */
+.cat-block {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Стили для котиков в вертикальном позиционировании */
+.cat-block-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Блоки для котиков */
+.block {
+    width: 200px;
+    height: 200px;
+    background: #e74c3c;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background: #9b59b6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Flex контейнер */
+.container-3 {
+    background: #ecf0f1;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #34495e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.block-3 {
+    width: 200px;
+    height: 200px;
+    background: #f39c12;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.cat-image-flex {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cat-image-flex:hover {
+    transform: scale(1.05);
+}
+
+/* Фиксированный котик */
+.fixed-cat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.fixed-cat:hover {
+    transform: scale(1.1);
+}
+
+.cat-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Работа со свойством position */
+.position-demo {
+    background: #ecf0f1;
+    padding: 50px;
+    border-radius: 10px;
+    height: 600px;
+    position: relative;
+    overflow: auto; /* Чтобы можно было прокручивать и видеть sticky */
+}
+
+.relative-box {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Увеличиваем высоту для демонстрации sticky */
+    background: linear-gradient(45deg, #bdc3c7, #ecf0f1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Absolute позиционирование */
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: #e74c3c;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Static позиционирование */
+.static-box {
+    position: static;
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 100px 0 20px 0;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Sticky позиционирование */
+.sticky-box {
+    position: sticky;
+    top: 20px;
+    background: #2ecc71;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 150px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+/* Relative позиционирование - ДОБАВЛЯЕМ НОВЫЙ */
+.relative-cat-box {
+    position: relative;
+    background: #9b59b6;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 200px 0 0 100px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    /* Сдвигаем от нормального положения */
+    top: -30px;
+    left: 50px;
+}
+
+/* Стили для котиков в position */
+.position-cat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px auto;
+    border: 3px solid white;
+}
+
+/* Подписи для position элементов */
+.absolute-box span,
+.static-box span,
+.sticky-box span,
+.relative-cat-box span {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+/* Дополнительные элементы для наглядности */
+.position-demo::before {
+    content: "↑ Прокрутите вниз чтобы увидеть sticky эффект ↑";
+    display: block;
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 5px;
+}
+
+/* Заголовки */
 h1 {
     color: #2c3e50;
     border-bottom: 3px solid #3498db;
@@ -50,12 +357,14 @@ h2 {
     border-left: 4px solid #e74c3c;
     padding-left: 15px;
 }
-/*Форматирование к тексту*/
+
+/* Текст */
 p {
     line-height: 1.6;
     margin-bottom: 15px;
     font-size: 16px;
 }
+
 /* Списки */
 ul, ol {
     margin: 15px 0;
@@ -76,6 +385,7 @@ ol li {
     list-style-type: decimal;
     color: #3498db;
 }
+
 /* Ссылки */
 a {
     color: #e74c3c;
@@ -90,6 +400,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Форматирование текста */
 b {
     color: #2c3e50;
     font-weight: 700;
@@ -119,7 +430,7 @@ sup {
     border-radius: 10px;
 }
 
-/* Рамка изображения */
+/* Рамка для изображений */
 .framed-image {
     border: 3px solid #3498db;
     border-radius: 12px;
@@ -129,7 +440,7 @@ sup {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Стиль изображенич */
+/* Изображения */
 .profile-photo {
     max-width: 100%;
     height: auto;
@@ -153,7 +464,7 @@ sup {
     font-style: italic;
 }
 
-/* Ля мобилки. Адаптивность не упоминается по пущай будет, т.к. флебох может это обеспечить =) */
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -165,7 +476,17 @@ sup {
         flex: none;
     }
     
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
     body {
         padding: 10px;
+    }
+    
+    .container-3 {
+        justify-content: center;
     }
 }
